@@ -12,9 +12,13 @@
 
 </head>
 <body>
-	<div ng-controller="MyCtrl">
-		App Version = {{ version }}
-    </div>
+	<table ng-controller="MultiplicationCtrl">
+		<tr ng-repeat="numberA in numbers">
+			<td ng-repeat="numberB in numbers">
+				{{ numberA * numberB }}
+			</td>
+		</tr>
+    </table>
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/myApp.js"></script>
